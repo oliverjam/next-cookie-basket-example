@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getBasketProducts } from "../db/model.js";
-import Header from "./components/header.jsx";
+import Header from "../components/header.jsx";
 
 export async function getServerSideProps({ req }) {
   const sid = req.cookies.sid;

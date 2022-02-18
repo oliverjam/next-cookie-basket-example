@@ -1,5 +1,5 @@
 import { getBasketProducts, getProduct } from "../../db/model.js";
-import Header from "../components/header.jsx";
+import Header from "../../components/header.jsx";
 
 export async function getServerSideProps({ req, params }) {
   const sid = req.cookies.sid;
