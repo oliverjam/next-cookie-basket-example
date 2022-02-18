@@ -1,0 +1,13 @@
+#! /bin/sh
+
+set -e
+
+source .env
+
+createuser next_example
+
+createdb next_example --owner next_example
+
+DB_URL="postgres://next_example:localhost@5432/next_example"
+echo "DATABASE_URL='${DB_URL}'" > .env
+echo "Created DB 'next_example' and .env file"
